@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-menu-button slot="start"></ion-menu-button>
+    <ion-title>Botão</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button color="dark">Clique aqui</ion-button>
+  <ion-button expand="full" color="danger">Botão full</ion-button>
+  <ion-button expand="block">Botão full block</ion-button>
+  <ion-button fill="outline" expand="block" color="success" (click)="abrirPagina('home')">Home</ion-button>
+  <ion-button fill="outline" expand="block" color="success" (click)="abrirPagina('folder/inbox')">Inbox</ion-button>
+  <ion-button fill="outline" expand="block" color="success" (click)="abrirPagina('folder/lista')">Lista</ion-button>
+  <h1>Fill</h1>
+  <ion-button fill="outline" expand="block" color="success" (click)="abrirPagina('home')">Clique aqui</ion-button>
+</ion-content>
