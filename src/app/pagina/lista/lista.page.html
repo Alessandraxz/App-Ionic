@@ -6,9 +6,22 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item>Bill Gates</ion-item>
-    <ion-item>Steve Jobs</ion-item>
+  <ion-list *ngFor="let me of personas">
+    <ion-item>{{p.nome}}
+      <ion-avatar slot="start">
+        <ion-img [src]="p.url"></ion-img>
+      </ion-avatar>
+    </ion-item>
   </ion-list>
-  <ion-img [src]=""></ion-img>
+  <ion-card *ngFor="let p of personas">
+    <ion-card-header color="primary">
+      <ion-card-title>{{p.nome}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-img [src]="p.url"></ion-img>
+      <ion-badge color="primary" mode="ios" slot="end">{{p.estrelas}}</ion-badge>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

@@ -23,6 +23,14 @@ const routes: Routes = [
   {
     path: 'lista',
     loadChildren: () => import('./pagina/lista/lista.module').then( m => m.ListaPageModule)
+  },
+  {
+    path: 'alertas',
+    loadChildren: () => import('./paginas/alertas/alertas.module').then( m => m.AlertasPageModule)
+  },
+  {
+    path: 'alertas',
+    loadChildren: () => import('./pagina/alertas/alertas.module').then( m => m.AlertasPageModule)
   }
 ];
 
