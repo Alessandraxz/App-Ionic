@@ -24,9 +24,35 @@ const routes: Routes = [
     path: 'lista',
     loadChildren: () => import('./pagina/lista/lista.module').then( m => m.ListaPageModule)
   },
+<<<<<<< Updated upstream
     {
     path: 'alertas',
     loadChildren: () => import('./pagina/alertas/alertas.module').then( m => m.AlertasPageModule)
+=======
+  {
+    path: 'alertas',
+    loadChildren: () => import('./pagina/alertas/alertas.module').then( m => m.AlertasPageModule)
+  },
+  {
+    path: 'infinite',
+    loadChildren: () => import('./pagina/infinite/infinite.module').then( m => m.InfinitePageModule)
+  },
+  {
+    path: 'refresher',
+    loadChildren: () => import('./pagina/refresher/refresher.module').then( m => m.RefresherPageModule)
+  },
+    {
+    path: 'contato',
+    loadChildren: () => import('./pagina/contato/contato.module').then( m => m.ContatoPageModule)
+  },
+  {
+    path: 'sliding',
+    loadChildren: () => import('./pagina/sliding/sliding.module').then( m => m.SlidingPageModule)
+  },
+  {
+    path: 'segment',
+    loadChildren: () => import('./pagina/segment/segment.module').then( m => m.SegmentPageModule)
+>>>>>>> Stashed changes
   }
 ];
 

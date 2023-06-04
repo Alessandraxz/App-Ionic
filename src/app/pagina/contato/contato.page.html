@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-menu-button slot="start"></ion-menu-button>
+    <ion-title>Contato</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Nome:</ion-label>
+      <ion-input type="text" placeholder="Digite seu nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>E-mail</ion-label>
+      <ion-input type="email" placeholder="Digite seu email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Senha</ion-label>
+      <ion-input type="password" placeholder="Digite sua senha"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-list-header>
+        <ion-label>Interesses</ion-label>
+      </ion-list-header>
+    </ion-item>
+    <ion-item>
+      <ion-label>Cinema</ion-label>
+      <ion-checkbox slot="start" color="danger"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Teatro</ion-label>
+      <ion-checkbox slot="start" color="danger"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Receber Informações</ion-label>
+      <ion-toggle color="success"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Usa Gmail?</ion-label>
+      <ion-radio-group [allowEmptySelection]="true" value="turtles">
+        <ion-radio value="sim">Sim</ion-radio><br />
+        <ion-radio value="não">Não</ion-radio><br />
+      </ion-radio-group>
+    </ion-item>
+    <ion-item>
+      <ion-label>Gênero</ion-label>
+      <ion-item>
+        <ion-label>Feminino</ion-label>
+        <ion-select cancelText="cancelar" okText="confirmar"></ion-select>
+        <ion-select-option value="feminino">Feminino</ion-select-option>
+        <ion-select-option value="masculino">Masculino</ion-select-option>
+      </ion-item>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

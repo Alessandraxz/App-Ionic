@@ -6,7 +6,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-button color="dark">Clique aqui</ion-button>
+  <ion-button color="dark" (click)="metodoToast()">Clique aqui</ion-button>
   <ion-button expand="full" color="danger">Botão full</ion-button>
   <ion-button expand="block">Botão full block</ion-button>
   <ion-button fill="outline" expand="block" color="success" (click)="abrirPagina('home')">Home</ion-button>
